@@ -1,0 +1,17 @@
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\bin\Debug\11111.exe
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\bin\Debug\11111.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\_11111.frm_server.resources
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\_11111.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\11111.exe
+c:\users\administrator\documents\visual studio 2010\Projects\11111\11111\obj\x86\Debug\11111.pdb
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\obj\x86\Debug\11111.exe
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\obj\x86\Debug\11111.pdb
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\bin\Debug\11111.exe
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\bin\Debug\11111.pdb
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\obj\x86\Debug\_11111.frm_server.resources
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\obj\x86\Debug\_11111.Properties.Resources.resources
+C:\Documents and Settings\bbb\My Documents\Visual Studio 2008\Projects\tcpserver1\server\obj\x86\Debug\11111.csproj.GenerateResource.Cache
