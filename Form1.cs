@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Net.Sockets;
-using System.Net;  // IP，IPAddress, IPEndPoint，端口等；
+using System.Net; 
 using System.Threading;
 using System.IO;
 using System.Data.SqlClient;
@@ -31,9 +31,9 @@ namespace _11111
 
         private void btnBeginListen_Click(object sender, EventArgs e)
         {
-            // 创建负责监听的套接字，注意其中的参数；
+            // 创建负责监听的套接字；
             socketWatch = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            // 获得文本框中的IP对象；
+            // 获得文本框中的IP；
             IPAddress address = IPAddress.Parse(txtIp.Text.Trim());
                 // 创建包含ip和端口号的网络节点对象；
                 IPEndPoint endPoint = new IPEndPoint(address, int.Parse(txtPort.Text.Trim()));
@@ -57,9 +57,7 @@ namespace _11111
             //}
         }
 
-        /// <summary>
-        /// 监听客户端请求的方法；
-        /// </summary>
+
         void WatchConnecting()
         {
             while (true)  // 持续不断的监听客户端的连接请求；
@@ -191,13 +189,10 @@ namespace _11111
                                     System.Diagnostics.Debug.WriteLine(myRow[myColumn]);	//遍历表中的每个单元格
                                 }
                             }*/
-//                        dataGridView1.DataSource = myDataSet.Tables[0];
-
 
 
                         myDataSet.Dispose();        // 释放DataSet对象
                         myDataAdapter.Dispose();    // 释放SqlDataAdapter对象
-                        //            myDataReader.Dispose();     // 释放SqlDataReader对象
                         MyConnection.Close();             // 关闭数据库连接
                         MyConnection.Dispose();           // 释放数据库连接对象
                     }
@@ -232,9 +227,6 @@ namespace _11111
         {
             string strMsg = txtMsgSend.Text.Trim();
             byte[] arrMsg = System.Text.Encoding.UTF8.GetBytes(strMsg); // 将要发送的字符串转换成Utf-8字节数组；
-//            byte[] arrSendMsg=new byte[arrMsg.Length+1];
-//            arrSendMsg[0] = 0; // 表示发送的是消息数据
-//            Buffer.BlockCopy(arrMsg, 0, arrSendMsg, 1, arrMsg.Length);
             string strKey = "";
             strKey = lbOnline.Text.Trim();
             if (string.IsNullOrEmpty(strKey))   // 判断是不是选择了发送的对象；
@@ -249,19 +241,11 @@ namespace _11111
             }
         }
 
-        /// <summary>
-        /// 群发消息
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e">消息</param>
+
         private void btnSendToAll_Click(object sender, EventArgs e)
         {
             string strMsg =  txtMsgSend.Text.Trim();
             byte[] arrMsg = System.Text.Encoding.UTF8.GetBytes(strMsg); // 将要发送的字符串转换成Utf-8字节数组；
-
-//            byte[] arrSendMsg = new byte[arrMsg.Length + 1];
-//            arrSendMsg[0] = 0; // 表示发送的是消息数据
-//            Buffer.BlockCopy(arrMsg, 0, arrSendMsg, 1, arrMsg.Length);
 
             foreach (Socket s in dict.Values)
             {
@@ -269,7 +253,7 @@ namespace _11111
             }
             ShowMsg(strMsg);
             txtMsgSend.Clear();
-            ShowMsg(" 群发完毕～～～");
+            ShowMsg(" sent finished");
         }
     
     }
